@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("bg.jpg");
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.prompt {
+  display: inline-block;
+  width: 400px;
+  height: 100vh;
+}
+
+.list {
+  display: inline-block;
+  width: 800px;
+  height: 100vh;
+  margin-left: 50px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+form {
+  background: white;
+  width: 300px;
+  height: 350px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 100px;
+  position: absolute;
+}
+
+form * {
+  width: 256px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#title {
+  width: 256px;
+  height: 35px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+textarea {
+  height: 200px;
+  padding: 5px;
+  resize: none;
+}
+
+#save {
+  height: 30px;
+  background: #59a846;
+  color: white;
+  font-weight: bold;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border: 1px solid white;
+}

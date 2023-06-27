@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar"><h3>To-Do list Web App</h3></div>
+    </header>
+    <div class="prompt">
+      <form action="">
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea
+          name="description"
+          id="description"
+          placeholder="Description"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="button" value="Save" id="save" onclick="addTask()" />
+      </form>
+    </div>
+    <div class="list col-md-8">
+      <div class="row">
+        <div class="col-sm-3 text-left">
+          <span class="font-weight-bold">Title</span>
+        </div>
+        <div class="col-sm-3 text-left">
+          <span class="font-weight-bold">Description</span>
+        </div>
+      </div>
+      <hr />
+      <div id="tasks"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
